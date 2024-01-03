@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://ui/icons/types/element_air.png" type="Texture" id=1]
+[ext_resource path="res://data/exchange_scripts/LootTableExchange.gd" type="Script" id=2]
+[ext_resource path="res://data/items/metal.tres" type="Resource" id=3]
+[ext_resource path="res://mods/VendingMachine_Mod/NewLootTables/air_loot_table.tres" type="Resource" id=4]
+
+[resource]
+script = ExtResource( 2 )
+max_amount = 100
+only_sold_if_unowned = false
+name = "'Air' Sticker Pack"
+description = "A mono element booster pack of 4 stickers including one guaranteed uncommon or rare!"
+icon = ExtResource( 1 )
+rarity = 0
+amount = 1
+service = ""
+currencies = [ ExtResource( 3 ) ]
+prices = [ 20 ]
+loot_table = ExtResource( 4 )
+loot_value = 3000
